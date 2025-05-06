@@ -10,6 +10,7 @@ The file is mainly intended for testing, debugging or if no web interface is nee
 The chatbot uses a RAG pipeline that is defined in chatbot_core.py
 """
 
+
 def setup_qa_chain(pdf_path="example.pdf"):
     """
     Build QA chain from the specified PDF file
