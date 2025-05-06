@@ -25,7 +25,7 @@ def main():
 
         # If a question is submitted, the question is sent to the QA chain & stores the result
         if question:
-            result = qa_chain({"question": question, "chat_history": st.session_state.chat_history})
+            result = qa_chain.invoke({"question": question, "chat_history": st.session_state.chat_history})
 
             st.session_state.chat_history.append(
                 (question, result["answer"])
